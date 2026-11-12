@@ -11,6 +11,13 @@
 
 本仓库为平台无关版本：激励广告为本地模拟，在线排行榜默认关闭（no-op 适配器），所有成绩仅保存在本机。接入平台时，需实现 `src/platform-services.ts` 的 `RewardedPort` 与 `src/online-provider.ts` 的 `OnlineLeaderboardHost`，并在 `ONLINE_BOARDS` 中配置榜单编号；未配置前界面按「仅本机成绩」降级，不会上传任何数据。
 
+## 文档导航
+
+- [开发日志](docs/DEVLOG.md)：从 v0.4 原型到 1.0 候选的完整开发轨迹、每阶段验收证据与工程方法
+- [从零搭建自己的版本](docs/BUILD-YOUR-OWN.md)：环境准备、命令表、加关、调手感、接回广告与排行榜、部署与已知坑
+- [远征计划](docs/expedition/PLAN.md) / [资源参数](docs/expedition/BALANCE.md)
+- [决策记录](docs/DECISIONS.md) / [测试矩阵](docs/TEST_MATRIX.md) / [逐次进度](docs/PROGRESS.md)
+
 以下为历史版本记录。
 
 # 引力盲航 / Gravity Landing v0.7.0-dev.1
