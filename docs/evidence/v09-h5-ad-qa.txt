@@ -1,0 +1,85 @@
+- text: ORBITAL FLIGHT LAB
+- heading "飞向未知。 平稳归航。" [level=2]:
+  - text: 飞向未知。
+  - text: 平稳归航。
+- paragraph:
+  - text: 每一次短喷射，
+  - text: 都在改写你的航线。
+- generic: 引力盲航 / v0.9.0-dev.2
+- main:
+  - link "引力盲航":
+    - /url: "#"
+    - text: 引力盲航
+    - generic: GRAVITY LANDING
+  - button "设置": ⚙
+  - button "关闭声音":
+  - button "全屏":
+  - button "暂停":
+  - region "引力盲航游戏区域":
+    - generic: 起飞训练
+    - generic: SECTOR 01
+    - generic: 着陆练习
+    - generic: 平台下降速度
+    - strong:
+      - text: "35.2"
+      - emphasis: m/s
+    - generic: 离地高度
+    - strong:
+      - text: "0"
+      - emphasis: m
+    - generic: 燃料余量
+    - strong:
+      - text: "100"
+      - emphasis: "%"
+    - text: L
+    - generic: 100%
+    - text: R
+    - generic: 100%
+    - generic: 180°
+    - generic: 横移 -0.0 m/s
+    - status: 开发验证场景 · 使用正式物理求解，不计金币
+    - generic: 下降过快 · 立即制动
+    - generic: 直距 14 m
+    - paragraph: 机头朝离开地表的方向，长按点火减速。
+    - text: 姿态控制
+    - generic: A / D
+    - button "向左旋转":
+      - generic: 左旋
+    - button "向右旋转":
+      - generic: 右旋
+    - text: 主推进器
+    - generic: W / ↑
+    - button "主推进器":
+      - generic: 按住点火
+    - generic: FLIGHT DEBRIEF
+    - generic: "!"
+    - heading "航行未能完成" [level=2]
+    - paragraph: 主体严重撞击
+    - generic: "35.2"
+    - generic: 主体冲击 m/s
+    - generic: "35.2"
+    - generic: 下降 m/s
+    - generic: 180°
+    - generic: 姿态偏差
+    - generic: 机身比支架脆弱。提前点火降低下降速度，让支架先接触平台。
+    - generic: 左支架 100%
+    - generic: 右支架 100%
+    - button "重新出发":
+      - text: 重新出发
+    - button "关卡选择"
+    - generic: 练习不计成绩与解锁
+    - button "返回全程航迹"
+  - generic: 练习 / 验证 · 不保存成绩
+  - button "重试 R":
+    - text: 重试
+    - generic: R
+  - generic: ◈ 0
+- generic: FLIGHT MANUAL / 01
+- heading "朝向决定推力。 惯性决定航向。" [level=3]:
+  - text: 朝向决定推力。
+  - text: 惯性决定航向。
+- paragraph: W 按住点火，松开滑行
+- paragraph: AD 调整机头朝向
+- paragraph: P 暂停 R 重新出发
+- text: 琥珀色箭线表示惯性方向。
+- text: 靠近平台时，先减速，再回正。

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "target": "TapTap H5 minigame",
+  "gates": [
+    {
+      "id": "device-playtest",
+      "status": "pending",
+      "evidence": "docs/V1-RC1-READINESS.md",
+      "detail": "Android/iOS触控、后台、音频、性能与关键关卡真人通关"
+    },
+    {
+      "id": "content-scope",
+      "status": "pending",
+      "evidence": "docs/V1-RC1-READINESS.md",
+      "detail": "30关主线与资源继承远征已实现，主线经济测试与30关连续物理验证通过；普通玩家完整远征和手机UI待验收。"
+    },
+    {
+      "id": "platform-project",
+      "status": "pending",
+      "evidence": "上线流程（未随仓库发布）",
+      "detail": "rc.2自测<pkg-48>竖屏上传读回通过；协议未签，主包仍<pkg-34>，Android/iOS均敬请期待且上线档期未指定。"
+    },
+    {
+      "id": "rewarded-ad",
+      "status": "pending",
+      "evidence": "docs/V1-RC1-READINESS.md",
+      "detail": "真实广告已接入，有用户成功试玩和首次整备确认反馈；最终候选取消/失败等实机边界记录待补。"
+    },
+    {
+      "id": "online-leaderboard",
+      "status": "pending",
+      "evidence": "docs/V1-RC1-READINESS.md",
+      "detail": "三榜已接入，已有用户每日自动提交和远征综合成绩可见反馈；正式可见范围、每日零点和完整纯净双榜回执待核对。"
+    },
+    {
+      "id": "release-materials",
+      "status": "pending",
+      "evidence": "docs/V1-RC1-READINESS.md",
+      "detail": "官方报告默认图标及简介/开发者的话/推荐语/宣传图/截图/实机视频缺项；正式主体联系信息、隐私和素材/AI披露待确认。"
+    },
+    {
+      "id": "publish-approval",
+      "status": "pending",
+      "evidence": "docs/V1-RC1-READINESS.md",
+      "detail": "用户对具体包、环境与发布动作的明确批准"
+    }
+  ]
+}

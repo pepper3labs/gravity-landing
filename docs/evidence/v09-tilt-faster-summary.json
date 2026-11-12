@@ -1,0 +1,75 @@
+{
+  "localEngineeringPassed": true,
+  "results": [
+    {
+      "name": "typecheck",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\typecheck.txt"
+    },
+    {
+      "name": "tests",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\tests.txt"
+    },
+    {
+      "name": "replays",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\replays.txt"
+    },
+    {
+      "name": "mastery",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\mastery.txt"
+    },
+    {
+      "name": "daily",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\daily.txt"
+    },
+    {
+      "name": "build-local",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\build-local.txt"
+    },
+    {
+      "name": "audit-local",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\audit-local.txt"
+    },
+    {
+      "name": "build-h5",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\build-h5.txt"
+    },
+    {
+      "name": "audit-h5",
+      "exitCode": 0,
+      "passed": true,
+      "log": "artifacts\\v09-validation\\2026-10-16T06-09-37.428Z\\audit-h5.txt"
+    }
+  ],
+  "releaseExitCode": 1,
+  "releaseStatus": {
+    "target": "TapTap H5 minigame",
+    "ready": false,
+    "blocked": [
+      "device-playtest: Android/iOS触控、后台、音频、性能与关键关卡真人通关",
+      "content-scope: v1.0约30关/5主题目标尚未达到；当前23关，缩减上线范围需用户决策",
+      "platform-project: 开发者主体、游戏项目、H5接入文档及测试容器",
+      "rewarded-ad: H5正式SDK、广告开通/测试位、完成回调及首启展示策略确认",
+      "online-leaderboard: 榜单ID、H5身份与接口、服务端复核、时区日切与同分规则验证",
+      "release-materials: 运营主体/联系信息、适用平台资料、正式政策、素材许可及商店截图确认",
+      "publish-approval: 用户对具体包、环境与发布动作的明确批准"
+    ],
+    "note": "只读检查，不部署、不修改验收结论；人工证据仍需审阅"
+  },
+  "note": "本地自动验证，不代表真人、手机、SDK或发布批准"
+}

@@ -1,0 +1,5 @@
+{
+  "source": "AI production UI; no human completion",
+  "state": "Browser tab: 4, Title: \"引力盲航 v0.9.0-dev.1 · Gravity Landing\", URL: \"http://127.0.0.1:10463/\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\nRemoved element IDs: 37-38\n+\t\t\t\t46 text  稳定停泊 · 等待点火\n+\t\t\t\t47 text ◈ 0\nThe focused UI element is 1 AXWebArea 引力盲航 v0.9.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10463/",
+  "logs": []
+}

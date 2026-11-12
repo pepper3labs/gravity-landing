@@ -1,0 +1,13 @@
+{
+  "renderer": "AMD Radeon(TM) 860M Graphics",
+  "shaderCompiled": true,
+  "frozenFrameIdentical": true,
+  "changedPixels": 83885,
+  "meanTemporalDifference": 8.451645447530865,
+  "inclinationChangesGeometry": true,
+  "darkShadow": true,
+  "frames": 72,
+  "previewSeconds": 6,
+  "renderAndEncodeSeconds": 2.1834063999995124,
+  "scope": "Offscreen desktop OpenGL of the runtime fragment shader with GLSL syntax adaptation; not Phaser/WebGL/mobile acceptance."
+}

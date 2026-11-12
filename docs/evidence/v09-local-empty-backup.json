@@ -1,0 +1,14 @@
+{
+  "format": "gravity-local-backup",
+  "version": 1,
+  "gameVersion": "0.9.0-dev.4",
+  "createdAt": "2026-10-15T23:58:30.302Z",
+  "entries": {
+    "gravity-campaign": null,
+    "gravity-coins": null,
+    "gravity-settings": null,
+    "gravity-playtest": null,
+    "gravity-daily": null,
+    "gravity-daily-replays": null
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>静界 · 动态黑洞预览</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#070d16;color:#d9eaf8;font:15px system-ui,sans-serif;min-height:100vh;display:grid;place-items:center}
+main{width:min(1100px,100%);padding:28px}header{display:flex;align-items:end;justify-content:space-between;gap:18px}h1{font-size:28px;letter-spacing:3px;margin:8px 0}p{color:#91a9bc;line-height:1.7}small{color:#8dcfef;letter-spacing:3px}
+canvas{display:block;width:100%;aspect-ratio:3/2;background:#070d16;border-radius:16px}section{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin:18px 0}label{display:grid;gap:8px;min-width:160px}input{accent-color:#86d5ff}button{background:#19344a;color:#deefff;border:1px solid #31536b;border-radius:8px;padding:12px 20px;font:inherit;cursor:pointer}output{color:#bce7ff}#status{font-size:13px;color:#819eaf}a{color:#a1d9f5}
+@media(max-width:600px){main{padding:16px}h1{font-size:22px}header{display:block}section{gap:14px}label{min-width:130px;flex:1}}
+</style></head><body><main>
+<header><div><small>L1 OBSERVATORY / DEV.14</small><h1>静界 · 流动的光</h1></div><p>旋转的盘面 · 弯曲的光路 · 变化的观察倾角</p></header>
+<canvas id="view" aria-label="实时动态黑洞：蓝白吸积盘、上下弯曲像与局部星光偏折">需要支持WebGL的浏览器。</canvas>
+<section><button id="pause" type="button">暂停</button><label>观察倾角 <output id="angleValue">10°</output><input id="angle" aria-label="观察倾角" type="range" min="3" max="35" value="10"></label><label>流动速度 <output id="speedValue">1.0×</output><input id="speed" aria-label="流动速度" type="range" min="0.2" max="2" step="0.1" value="1"></label><label>画面质量<select id="quality"><option value="960">标准</option><option value="1440">精细</option><option value="600">省电</option></select></label><label><span>局部星光偏折</span><input id="sky" type="checkbox" checked></label><button id="reset" type="button">重置</button></section>
+<p id="status" role="status">正在准备光路数据…</p><p>这是游戏使用的动态黑洞着色器预览。盘面亮度与局部星光偏折含艺术化近似；预览中的倾角调节不改变游戏的二维飞行规则。</p>
+</main><script id="fragment" type="x-shader/x-fragment">__FRAGMENT__</script><script>
+const canvas=document.getElementById('view'),status=document.getElementById('status');
+let gl,program,texture,buffer,ready=false,time=0,last=0,paused=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const pause=document.getElementById('pause'),angle=document.getElementById('angle'),speed=document.getElementById('speed'),quality=document.getElementById('quality'),sky=document.getElementById('sky');
+function pauseLabel(){pause.textContent=paused?'继续':'暂停'}pauseLabel();
+pause.onclick=()=>{paused=!paused;pauseLabel()};
+angle.oninput=()=>document.getElementById('angleValue').value=angle.value+'°';
+speed.oninput=()=>document.getElementById('speedValue').value=Number(speed.value).toFixed(1)+'×';
+document.getElementById('reset').onclick=()=>{time=0;angle.value='10';speed.value='1';angle.oninput();speed.oninput()};
+const image=new Image();image.src='data:image/png;base64,__LUT__';
+function compile(type,source){const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s}
+function setup(){
+gl=canvas.getContext('webgl',{alpha:false,antialias:false,preserveDrawingBuffer:true});if(!gl)throw Error('当前浏览器不支持WebGL，请用支持WebGL的浏览器打开。');
+const vs=compile(gl.VERTEX_SHADER,'attribute vec2 position; varying vec2 outTexCoord; void main(){outTexCoord=vec2(position.x*.5+.5,.5-position.y*.5);gl_Position=vec4(position,0,1);}');
+const fs=compile(gl.FRAGMENT_SHADER,document.getElementById('fragment').textContent);program=gl.createProgram();gl.attachShader(program,vs);gl.attachShader(program,fs);gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));gl.deleteShader(vs);gl.deleteShader(fs);gl.useProgram(program);
+buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);const pos=gl.getAttribLocation(program,'position');gl.enableVertexAttribArray(pos);gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);
+texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL,false);gl.pixelStorei(gl.UNPACK_COLORSPACE_CONVERSION_WEBGL,gl.NONE);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.uniform1i(gl.getUniformLocation(program,'uMainSampler'),0);
+gl.enable(gl.BLEND);gl.blendFunc(gl.ONE,gl.ONE_MINUS_SRC_ALPHA);ready=true;status.textContent='实时渲染已启动 · 调整倾角可以观察盘面与弯曲像的变化';}
+const uniforms={};function uniform(name,value){if(!(name in uniforms))uniforms[name]=gl.getUniformLocation(program,name);gl.uniform1f(uniforms[name],value)}
+function render(now){if(ready&&!document.hidden){const dt=last?Math.min((now-last)/1000,.05):0;if(!paused)time+=dt*Number(speed.value);const w=Number(quality.value);if(canvas.width!==w){canvas.width=w;canvas.height=Math.round(w*2/3)}gl.viewport(0,0,canvas.width,canvas.height);gl.clearColor(7/255,13/255,22/255,1);gl.clear(gl.COLOR_BUFFER_BIT);uniform('uTime',time);uniform('uInclination',Number(angle.value)*Math.PI/180);uniform('uResolutionX',canvas.width);uniform('uSky',sky.checked?1:0);gl.drawArrays(gl.TRIANGLES,0,6);}last=now;requestAnimationFrame(render)}
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();ready=false;status.textContent='图形上下文暂时中断，等待恢复…'});
+canvas.addEventListener('webglcontextrestored',()=>{try{Object.keys(uniforms).forEach(k=>delete uniforms[k]);setup()}catch(e){status.textContent=e.message}});
+image.onload=()=>{try{setup();requestAnimationFrame(render)}catch(e){status.textContent='无法启动：'+e.message}};image.onerror=()=>status.textContent='光路数据加载失败';
+</script></body></html>

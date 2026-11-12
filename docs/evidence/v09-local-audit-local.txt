@@ -1,0 +1,62 @@
+{
+  "format": "gravity-local-build",
+  "version": 1,
+  "gameVersion": "0.9.0-dev.4",
+  "createdAt": "2026-10-16T00:00:38.112Z",
+  "commit": "79d5cb39022cc5e45349a34611eef35718ebfa1f",
+  "workingTreeDirty": true,
+  "sourceFingerprint": "776a40a6f3b47f57ef8d393f321cdee71f35b447dd0e799fd43e39e453de34c2",
+  "lockfileSha256": "1b258342db9850e9a362953db4181d254a17a8ffb37acdaffc5121bb3059fa63",
+  "node": "v24.21.0",
+  "scope": "Local playtest only; no human/device/platform acceptance implied",
+  "buildDirectory": "dist",
+  "artifacts": [
+    {
+      "path": "about-data.html",
+      "bytes": 1811,
+      "gzipBytes": 1255,
+      "sha256": "db0658015c3141fa0002f44e54b73e459acd7936e79c60cb1bd76e0456b97b84"
+    },
+    {
+      "path": "assets/index-Dkv-k-d8.css",
+      "bytes": 20480,
+      "gzipBytes": 5628,
+      "sha256": "89ff9cb65bb42d174ca5b0b974981c610cc8c1eeca8a6f4e18c0dd2186f43830"
+    },
+    {
+      "path": "assets/index-WEpYwJKS.js",
+      "bytes": 120778,
+      "gzipBytes": 45789,
+      "sha256": "cfaa8536bcb35bd52428323ccc450b02ce6a00b964d979b40f2151476480ac15"
+    },
+    {
+      "path": "assets/phaser-DFK5Ua9d.js",
+      "bytes": 1208056,
+      "gzipBytes": 332169,
+      "sha256": "f9025c1a29bc3ae097dd886ce07717b297466da1ce8f032c8294252ce6cf5cdb"
+    },
+    {
+      "path": "icon.svg",
+      "bytes": 486,
+      "gzipBytes": 302,
+      "sha256": "22b9b179f9793133c47d74e90496c7fe95ee1f20ace8f8a2474626a945816d65"
+    },
+    {
+      "path": "index.html",
+      "bytes": 724,
+      "gzipBytes": 495,
+      "sha256": "4a60a2746ec9e1f0a2cfa3c2c3545c7c5df97f703202cc28c30b887a42e05853"
+    },
+    {
+      "path": "third-party-notices.txt",
+      "bytes": 3519,
+      "gzipBytes": 982,
+      "sha256": "a4b509f755dfac25e7836d0debe2ff0167a11c09a7752b43eb312852d43f2e82"
+    }
+  ],
+  "totalBytes": 1355854,
+  "totalGzipBytes": 386620,
+  "largeChunks": [
+    "assets/phaser-DFK5Ua9d.js"
+  ]
+}

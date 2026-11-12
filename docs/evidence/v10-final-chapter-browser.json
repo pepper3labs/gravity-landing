@@ -1,0 +1,27 @@
+[
+  {
+    "level": 26,
+    "state": "Browser tab: 6, Title: \"引力盲航 v0.9.0-dev.11 · Gravity Landing\", URL: \"http://127.0.0.1:10472/?level=twin-atmosphere&qa=route\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 0 AXWebArea 引力盲航 v0.9.0-dev.11 · Gravity Landing, URL: 127.0.0.1:10472/?level=twin-atmosphere&qa=route",
+    "errors": []
+  },
+  {
+    "level": 27,
+    "state": "Browser tab: 7, Title: \"引力盲航 v0.9.0-dev.11 · Gravity Landing\", URL: \"http://127.0.0.1:10472/?level=silent-reserve&qa=route\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 0 AXWebArea 引力盲航 v0.9.0-dev.11 · Gravity Landing, URL: 127.0.0.1:10472/?level=silent-reserve&qa=route",
+    "errors": []
+  },
+  {
+    "level": 28,
+    "state": "Browser tab: 8, Title: \"引力盲航 v0.9.0-dev.11 · Gravity Landing\", URL: \"http://127.0.0.1:10472/?level=polar-storm&qa=route\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 0 AXWebArea 引力盲航 v0.9.0-dev.11 · Gravity Landing, URL: 127.0.0.1:10472/?level=polar-storm&qa=route",
+    "errors": []
+  },
+  {
+    "level": 29,
+    "state": "Browser tab: 9, Title: \"引力盲航 v0.9.0-dev.11 · Gravity Landing\", URL: \"http://127.0.0.1:10472/?level=homeward-needle&qa=route\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 0 AXWebArea 引力盲航 v0.9.0-dev.11 · Gravity Landing, URL: 127.0.0.1:10472/?level=homeward-needle&qa=route",
+    "errors": []
+  },
+  {
+    "level": 30,
+    "state": "Browser tab: 10, Title: \"引力盲航 v0.9.0-dev.11 · Gravity Landing\", URL: \"http://127.0.0.1:10472/?level=last-horizon&qa=route\".\nThere has been no change in the accessibility tree.\nThe focused UI element is 0 AXWebArea 引力盲航 v0.9.0-dev.11 · Gravity Landing, URL: 127.0.0.1:10472/?level=last-horizon&qa=route",
+    "errors": []
+  }
+]

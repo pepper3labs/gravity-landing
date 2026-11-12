@@ -1,0 +1,19 @@
+
+> gravity-landing@0.7.0-dev.1 build
+> tsc --noEmit && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 27 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.67 kB │ gzip:   0.47 kB
+dist/assets/index-D8CDhoHZ.css     20.06 kB │ gzip:   5.53 kB
+dist/assets/index-BF4brGOM.js      92.28 kB │ gzip:  35.32 kB
+dist/assets/phaser-DFK5Ua9d.js  1,208.06 kB │ gzip: 332.17 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 3.49s

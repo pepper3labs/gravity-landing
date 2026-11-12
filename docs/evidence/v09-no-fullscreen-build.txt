@@ -1,0 +1,81 @@
+
+> gravity-landing@0.9.0-dev.5 build:candidate
+> tsc --noEmit && vite build --mode taptap-h5 --base ./ --outDir dist-candidate && tsx scripts/audit-build.ts dist-candidate
+
+vite v7.3.7 building client environment for taptap-h5...
+transforming...
+✓ 34 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-candidate/index.html                     0.73 kB │ gzip:   0.50 kB
+dist-candidate/assets/index-DVpaUNOJ.css     20.42 kB │ gzip:   5.61 kB
+dist-candidate/assets/index-UcM9CRCW.js     120.36 kB │ gzip:  45.65 kB
+dist-candidate/assets/phaser-DFK5Ua9d.js  1,208.06 kB │ gzip: 332.17 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 3.21s
+{
+  "format": "gravity-local-build",
+  "version": 1,
+  "gameVersion": "0.9.0-dev.5",
+  "createdAt": "2026-10-16T01:32:46.765Z",
+  "commit": "a0fe20847d8f0268167bcbc4facc00555c95b7d6",
+  "workingTreeDirty": true,
+  "sourceFingerprint": "92a2038dad46fa8e456666461991a620d286ab63bce92c05176ec1d979d95e1c",
+  "lockfileSha256": "34b00ca39173288d0789cb721364532a0b6664a8e70ccb3259bbc91947aed423",
+  "node": "v24.21.0",
+  "scope": "Local playtest only; no human/device/platform acceptance implied",
+  "buildDirectory": "dist-candidate",
+  "artifacts": [
+    {
+      "path": "about-data.html",
+      "bytes": 1811,
+      "gzipBytes": 1255,
+      "sha256": "db0658015c3141fa0002f44e54b73e459acd7936e79c60cb1bd76e0456b97b84"
+    },
+    {
+      "path": "assets/index-DVpaUNOJ.css",
+      "bytes": 20420,
+      "gzipBytes": 5605,
+      "sha256": "694e4483863aad4f0beb0c110946f010c8daa722b6c4a05058778039fc271871"
+    },
+    {
+      "path": "assets/index-UcM9CRCW.js",
+      "bytes": 120361,
+      "gzipBytes": 45650,
+      "sha256": "f4a4b5e359950c9a24f30f5651ba2a0f173dd75431e84d724c0ff2c7b6c96ff3"
+    },
+    {
+      "path": "assets/phaser-DFK5Ua9d.js",
+      "bytes": 1208056,
+      "gzipBytes": 332169,
+      "sha256": "f9025c1a29bc3ae097dd886ce07717b297466da1ce8f032c8294252ce6cf5cdb"
+    },
+    {
+      "path": "icon.svg",
+      "bytes": 486,
+      "gzipBytes": 302,
+      "sha256": "22b9b179f9793133c47d74e90496c7fe95ee1f20ace8f8a2474626a945816d65"
+    },
+    {
+      "path": "index.html",
+      "bytes": 728,
+      "gzipBytes": 497,
+      "sha256": "02a04ee3685a00a8217546e368ac9d5deb304133a7b72420f1b167e416173eab"
+    },
+    {
+      "path": "third-party-notices.txt",
+      "bytes": 3519,
+      "gzipBytes": 982,
+      "sha256": "a4b509f755dfac25e7836d0debe2ff0167a11c09a7752b43eb312852d43f2e82"
+    }
+  ],
+  "totalBytes": 1355381,
+  "totalGzipBytes": 386460,
+  "largeChunks": [
+    "assets/phaser-DFK5Ua9d.js"
+  ]
+}

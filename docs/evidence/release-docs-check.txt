@@ -1,0 +1,4 @@
+Links checked: docs/RELEASE_CHECKLIST.md
+Links checked: docs/PLAYTEST-TEMPLATE.md
+14 level IDs match archived files; all human result cells remain pending.
+Documentation-only batch: game tests/build/replays not rerun; previous 853230a evidence retained.

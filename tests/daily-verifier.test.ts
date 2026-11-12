@@ -1,0 +1,51 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {DailyVerifier} from '../scripts/server/daily-verifier';
+import {archiveDaily} from '../src/daily-archive';
+import {dailyCourse} from '../src/daily';
+import {levelById} from '../src/levels';
+import {flyRoute} from '../src/replay';
+
+const start=Date.parse('2026-10-15T12:00:00Z'),course=dailyCourse(new Date(start));
+const archive=archiveDaily(course,flyRoute(levelById(course.levelId)!,true).report.inputs);
+const raw=JSON.stringify(archive);
+test('server tickets bind identity/course, recompute score, isolate returned objects and retain ties',()=>{
+ let now=start;const service=new DailyVerifier(()=>now);
+ const a=service.issue('alpha'),b=service.issue('beta');
+ a.course.levelId='tampered';now+=120000;
+ assert.throws(()=>service.submit('beta',a.token,raw),/challenge/);
+ assert.throws(()=>service.submit('alpha',a.token,JSON.stringify({...archive,best:{...archive.best,score:4700}})));
+ const result=service.submit('alpha',a.token,raw);assert.deepEqual(result,archive.best);
+ result.score=0;assert.deepEqual(service.submit('alpha',a.token,raw),archive.best);
+ service.submit('beta',b.token,raw);
+ assert.deepEqual(service.list(course.id).map(r=>[r.pilot,r.rank]),[['alpha',1],['beta',1]]);
+ const rows=service.list(course.id);rows[0].best.score=0;
+ assert.equal(service.list(course.id)[0].best.score,archive.best.score);
+ assert.throws(()=>service.submit('alpha',a.token,raw+' '),/already used/);
+ assert.deepEqual(service.list('daily-v1:2026-10-15'),[]);
+});
+test('server time rejects premature, expired, next-day and mismatched course submissions',()=>{
+ let now=start;const service=new DailyVerifier(()=>now),ticket=service.issue('alpha');
+ assert.throws(()=>service.submit('alpha',ticket.token,raw),/predates/);
+ now+=120000;
+ assert.throws(()=>service.submit('alpha',ticket.token,JSON.stringify({...archive,course:{...course,id:'daily-v2:2026-10-16'}})),/mismatch/);
+ now=start+600000;assert.throws(()=>service.submit('alpha',ticket.token,raw),/expired/);
+ now=Date.parse('2026-10-15T23:59:00+08:00');const late=service.issue('alpha');
+ assert.equal(late.expiresAt,Date.parse('2026-10-16T00:00:00+08:00'));
+ now=late.expiresAt;assert.throws(()=>service.submit('alpha',late.token,raw),/expired/);
+ assert.equal(service.issue('alpha').course.day,'2026-10-16');
+});
+test('bounded service rejects malformed input, caps tickets and reclaims expiry',()=>{
+ let now=start;const service=new DailyVerifier(()=>now,3);
+ assert.throws(()=>service.issue('<invalid>'));
+ const ticket=service.issue('alpha');service.issue('alpha');service.issue('alpha');
+ assert.throws(()=>service.issue('beta'),/capacity/);
+ now+=120000;
+ assert.throws(()=>service.submit('alpha',ticket.token,'界'.repeat(700000)),/large/);
+ assert.throws(()=>service.submit('alpha',ticket.token,'null'),/mismatch/);
+ assert.throws(()=>service.submit('alpha','x',raw),/challenge/);
+ assert.deepEqual(service.list(course.id),[]);
+ now=start+600000;assert.ok(service.issue('beta').token);
+ const limit=new DailyVerifier(()=>now);limit.issue('alpha');limit.issue('alpha');limit.issue('alpha');
+ assert.throws(()=>limit.issue('alpha'),/active/);
+});

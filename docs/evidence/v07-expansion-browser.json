@@ -1,0 +1,22 @@
+{
+  "source": "AI browser QA input replay, not human",
+  "routes": [
+    {
+      "levelId": "moon-return",
+      "state": "Browser tab: 3, Title: \"引力盲航 v0.7.0-dev.1 · Gravity Landing\", URL: \"http://127.0.0.1:10461/?level=moon-return&qa=route\".\n1 AXWebArea 引力盲航 v0.7.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10461/?level=moon-return&qa=route\n\t2 container app\n\t\t3 container\n\t\t\t4 text ORBITAL FLIGHT LAB\n\t\t\t5 heading 飞向未知。 平稳归航。, Value: 2\n\t\t\t\t6 text 飞向未知。\n\t\t\t\t7 text 平稳归航。\n\t\t\t8 text 每一次短喷射，\n\t\t\t9 text 都在改写你的航线。 引力盲航 / v0.7.0-dev.2\n\t\t10 container shell\n\t\t\t11 container\n\t\t\t\t12 link Description: 引力盲航, Value: 127.0.0.1:10461/?level=moon-return&qa=route#\n\t\t\t\t13 button Description: 设置, ID: settings\n\t\t\t\t14 button Description: 关闭声音, ID: sound\n\t\t\t\t15 button Description: 全屏, ID: fullscreen\n\t\t\t\t16 button Description: 暂停, ID: pause\n\t\t\t17 container Description: 引力盲航游戏区域, ID: game\n\t\t\t\t18 container overlay\n\t\t\t\t\t19 text FLIGHT PATH / 全程航迹\n\t\t\t\t\t20 heading 精准、平稳，双支架完整。, Value: 3\n\t\t\t\t\t\t21 text 精准、平稳，双支架完整。\n\t\t\t\t\t22 text 119.7s · 52% 余油 · ★★★\n\t\t\t\t\t23 button 立即重试, ID: route-retry\n\t\t\t\t\t24 button 查看结算 / 继续, ID: route-details\n\t\t\t\t\t25 text 实心点：起点　空心圈：终点　折线：完整飞行轨迹\n\t\t\t26 container\n\t\t\t\t27 text  练习 / 验证 · 不保存成绩\n\t\t\t\t28 button 重试 R, ID: retry\n\t\t\t\t\t29 text 重试\n\t\t\t\t\t30 text R\n\t\t\t\t31 text ◈ 0\n\t\t32 container\n\t\t\t33 text FLIGHT MANUAL / 01\n\t\t\t34 heading 朝向决定推力。 惯性决定航向。, Value: 3\n\t\t\t\t35 text 朝向决定推力。\n\t\t\t\t36 text 惯性决定航向。\n\t\t\t37 text W  按住点火，松开滑行 A D  调整机头朝向 P  暂停  R  重新出发 琥珀色箭线表示惯性方向。\n\t\t\t38 text 靠近平台时，先减速，再回正。\n\nThe focused UI element is 1 AXWebArea 引力盲航 v0.7.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10461/?level=moon-return&qa=route"
+    },
+    {
+      "levelId": "atmosphere-edge",
+      "state": "Browser tab: 3, Title: \"引力盲航 v0.7.0-dev.1 · Gravity Landing\", URL: \"http://127.0.0.1:10461/?level=atmosphere-edge&qa=route\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~1 AXWebArea 引力盲航 v0.7.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10461/?level=atmosphere-edge&qa=route\n~\t\t\t\t12 link Description: 引力盲航, Value: 127.0.0.1:10461/?level=atmosphere-edge&qa=route#\n~\t\t\t\t\t22 text 127.4s · 48% 余油 · ★★★\nThe focused UI element is 1 AXWebArea 引力盲航 v0.7.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10461/?level=atmosphere-edge&qa=route"
+    },
+    {
+      "levelId": "reserve-landing",
+      "state": "Browser tab: 3, Title: \"引力盲航 v0.7.0-dev.1 · Gravity Landing\", URL: \"http://127.0.0.1:10461/?level=reserve-landing&qa=route\".\nThe following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.\n~1 AXWebArea 引力盲航 v0.7.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10461/?level=reserve-landing&qa=route\n~\t\t\t\t12 link Description: 引力盲航, Value: 127.0.0.1:10461/?level=reserve-landing&qa=route#\n~\t\t\t\t\t22 text 111.1s · 36% 余油 · ★★★\nThe focused UI element is 1 AXWebArea 引力盲航 v0.7.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10461/?level=reserve-landing&qa=route"
+    },
+    {
+      "levelId": "advanced-finale",
+      "state": "Browser tab: 3, Title: \"引力盲航 v0.7.0-dev.1 · Gravity Landing\", URL: \"http://127.0.0.1:10461/?level=advanced-finale&qa=route\".\n1 AXWebArea 引力盲航 v0.7.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10461/?level=advanced-finale&qa=route\n\t2 container shell\n\t\t3 container\n\t\t\t4 link Description: 引力盲航, Value: 127.0.0.1:10461/?level=advanced-finale&qa=route#\n\t\t\t5 button Description: 设置, ID: settings\n\t\t\t6 button Description: 关闭声音, ID: sound\n\t\t\t7 button Description: 全屏, ID: fullscreen\n\t\t\t8 button Description: 暂停, ID: pause\n\t\t9 container Description: 引力盲航游戏区域, ID: game\n\t\t\t10 container overlay\n\t\t\t\t11 text FLIGHT PATH / 全程航迹\n\t\t\t\t12 heading 精准、平稳，双支架完整。, Value: 3\n\t\t\t\t\t13 text 精准、平稳，双支架完整。\n\t\t\t\t14 text 151.4s · 58% 余油 · ★★★\n\t\t\t\t15 button 立即重试, ID: route-retry\n\t\t\t\t16 button 查看结算 / 继续, ID: route-details\n\t\t\t\t17 text 实心点：起点　空心圈：终点　折线：完整飞行轨迹\n\t\t18 container\n\t\t\t19 text  练习 / 验证 · 不保存成绩\n\t\t\t20 button 重试 R, ID: retry\n\t\t\t\t21 text 重试\n\t\t\t\t22 text R\n\t\t\t23 text ◈ 0\n\nThe focused UI element is 1 AXWebArea 引力盲航 v0.7.0-dev.1 · Gravity Landing, URL: 127.0.0.1:10461/?level=advanced-finale&qa=route"
+    }
+  ],
+  "logs": []
+}

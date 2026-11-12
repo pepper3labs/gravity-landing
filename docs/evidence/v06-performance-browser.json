@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "gameVersion": "0.6.0",
+  "exportedAt": "2026-10-14T15:02:54.987Z",
+  "source": "local-manual-play",
+  "scope": "Most recent 200 attempts only; excludes practice and QA. Not proof of human or device acceptance.",
+  "levels": [
+    {
+      "levelId": "training-launch",
+      "attempts": 1,
+      "unassistedWins": 0,
+      "assistedWins": 0,
+      "failures": 0,
+      "abandoned": 1,
+      "interrupted": 0,
+      "retries": 0,
+      "attemptsToFirstUnassistedWin": null,
+      "activeSecondsToFirstUnassistedWin": null
+    }
+  ],
+  "attempts": [
+    {
+      "id": 1,
+      "levelId": "training-launch",
+      "startedAt": "2026-10-14T15:02:26.814Z",
+      "outcome": "abandoned",
+      "seconds": 8.741666666666811,
+      "fuel": 104.28333333333505,
+      "assisted": false,
+      "rescues": 0,
+      "reason": "",
+      "failures": [],
+      "endedAt": "2026-10-14T15:02:43.139Z",
+      "departure": "menu"
+    }
+  ],
+  "performanceSession": {
+    "version": 1,
+    "scope": "Session only; latest 20 manual runs. Visible active flight only; excludes practice, QA, pause and background. Frame intervals, not GPU time or human/device certification.",
+    "bucketUpperBoundsMs": [
+      16.7,
+      33.4,
+      50,
+      100,
+      250,
+      null
+    ],
+    "runs": [
+      {
+        "id": 1,
+        "levelId": "training-launch",
+        "groups": [
+          {
+            "lowEffects": false,
+            "samples": 1430,
+            "totalMs": 8686.39999999106,
+            "maxMs": 15.200000002980232,
+            "buckets": [
+              1430,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "meanMs": 6.074405594399342,
+            "intervalFps": 164.62516117165592
+          }
+        ]
+      }
+    ]
+  }
+}

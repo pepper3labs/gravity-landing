@@ -1,0 +1,8 @@
+Exception calling "Open" with "2" argument(s): "The file 'D:\Workspace\AI\Vibe\gravity landing\artifacts\taptap-selftes
+t\gravity-0.9.0-dev.8.zip' already exists."
+At D:\Workspace\AI\Vibe\gravity landing\scripts\package-h5.ps1:25 char:1
++ $file = [IO.File]::Open($outputPath, [IO.FileMode]::CreateNew)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : IOException
+ 

@@ -1,0 +1,68 @@
+- main:
+  - link "引力盲航":
+    - /url: "#"
+    - text: 引力盲航
+    - generic: GRAVITY LANDING
+  - button "设置": ⚙
+  - button "关闭声音":
+  - button "全屏":
+  - button "暂停":
+  - region "引力盲航游戏区域":
+    - generic: 起飞训练
+    - generic: SECTOR 01
+    - generic: 着陆练习
+    - generic: 平台下降速度
+    - strong:
+      - text: "75.1"
+      - emphasis: m/s
+    - generic: 离地高度
+    - strong:
+      - text: "0"
+      - emphasis: m
+    - generic: 燃料余量
+    - strong:
+      - text: "100"
+      - emphasis: "%"
+    - text: L
+    - generic: 断裂
+    - text: R
+    - generic: 断裂
+    - generic: 0°
+    - generic: 横移 0.0 m/s
+    - status: 右起落架断裂 · 点火抬升，反向旋转补救
+    - generic: 支架断裂 · 立即补救
+    - generic: 直距 11 m
+    - paragraph: 点火抬升，反向旋转抑制倾倒；法向与横移速度均低于 4 可轻触迫降。
+    - text: 姿态控制
+    - generic: A / D
+    - button "向左旋转":
+      - generic: 左旋
+    - button "向右旋转":
+      - generic: 右旋
+    - text: 主推进器
+    - generic: W / ↑
+    - button "主推进器":
+      - generic: 按住点火
+    - generic: FLIGHT DEBRIEF
+    - generic: "!"
+    - heading "航行未能完成" [level=2]
+    - paragraph: 主体严重撞击
+    - generic: "75.1"
+    - generic: 主体冲击 m/s
+    - generic: "75.1"
+    - generic: 下降 m/s
+    - generic: 0°
+    - generic: 姿态偏差
+    - generic: 机身比支架脆弱。提前点火降低下降速度，让支架先接触平台。
+    - generic: 左支架 已断裂
+    - generic: 右支架 已断裂
+    - button "重新出发":
+      - text: 重新出发
+    - button "关卡选择"
+    - generic: 练习不计成绩与解锁
+    - button "返回全程航迹"
+  - generic: 练习 / 验证 · 不保存成绩
+  - button "重试 R":
+    - text: 重试
+    - generic: R
+  - generic: ◈ 0

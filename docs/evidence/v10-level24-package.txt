@@ -1,0 +1,12 @@
+{
+    "version":  "0.9.0-dev.9",
+    "file":  "D:\\Workspace\\AI\\Vibe\\gravity landing\\artifacts\\taptap-selftest\\gravity-0.9.0-dev.9.zip",
+    "bytes":  387151,
+    "sha256":  "b270b1158cdd0fe7373711094169fdeb64e5cff642943f3db4920af81ed1c948",
+    "sourceFingerprint":  "36e38a73d25ed50fcdf6eb82ae29c5ffb1b4bdf355015e121ebf09cab86d5f13",
+    "commit":  "cdf2f603fdd6dbdb0901c9c757215429d5f99a00",
+    "workingTreeDirty":  true,
+    "runtimeFiles":  7,
+    "verified":  true,
+    "uploaded":  false
+}

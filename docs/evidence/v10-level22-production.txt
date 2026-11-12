@@ -1,0 +1,199 @@
+- text: ORBITAL FLIGHT LAB
+- heading "飞向未知。 平稳归航。" [level=2]:
+  - text: 飞向未知。
+  - text: 平稳归航。
+- paragraph:
+  - text: 每一次短喷射，
+  - text: 都在改写你的航线。
+- generic: 引力盲航 / v0.9.0-dev.3
+- main:
+  - link "引力盲航":
+    - /url: "#"
+    - text: 引力盲航
+    - generic: GRAVITY LANDING
+  - button "设置": ⚙
+  - button "关闭声音":
+  - button "全屏":
+  - region "引力盲航游戏区域":
+    - status
+    - generic: CAMPAIGN / 22 MISSIONS
+    - heading "星际航线" [level=2]
+    - paragraph: 4 章 · 22 条航线，从起飞训练逐步挑战复杂环境。
+    - generic: 0 / 22 已完成 · 0 / 66 星
+    - button "每日挑战 · 本机纪录"
+    - generic: 下一次航行
+    - heading "独立完成 · 起飞训练" [level=3]
+    - paragraph: 从已解锁航线中选择目标，救援成绩单独保留。
+    - button "挑战这条航线"
+    - group "重玩目标筛选":
+      - button "全部航线 · 22" [pressed]
+      - button "未独立通关 · 1"
+      - button "冲独立三星 · 1"
+    - paragraph: 独立目标不计救援成绩；总星数仍保留原有统计。
+    - button "01 起飞训练 目标就在右侧，先学会点火、轻转和松手。 已解锁 · 等待首次航行 独立 ☆☆☆ · 救援 ☆☆☆ ☆☆☆":
+      - generic: "01"
+      - generic: 起飞训练
+      - generic: 目标就在右侧，先学会点火、轻转和松手。
+      - emphasis: 已解锁 · 等待首次航行
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: ☆☆☆
+    - button "02 减速训练 稍远一点的宽平台，练习提前制动与对准。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "02"
+      - generic: 减速训练
+      - generic: 稍远一点的宽平台，练习提前制动与对准。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "03 远侧归航 绕行 100°，在星球右下侧完成长途归航。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "03"
+      - generic: 远侧归航
+      - generic: 绕行 100°，在星球右下侧完成长途归航。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "04 惯性控制 绕行 130°，在南半球提前反向制动。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "04"
+      - generic: 惯性控制
+      - generic: 绕行 130°，在南半球提前反向制动。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "05 低重力飞行 五分之一重力，绕行 150°，用短喷射控制漫长滑行。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "05"
+      - generic: 低重力飞行
+      - generic: 五分之一重力，绕行 150°，用短喷射控制漫长滑行。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "06 双星穿越 跨越千米星际间隙，绕至远岸伴星的东南侧着陆。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "06"
+      - generic: 双星穿越
+      - generic: 跨越千米星际间隙，绕至远岸伴星的东南侧着陆。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "07 精准着陆 绕行 165°，在几乎倒置的视角中对准窄平台。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "07"
+      - generic: 精准着陆
+      - generic: 绕行 165°，在几乎倒置的视角中对准窄平台。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "08 紧急抢救 飞至正对面的南极，避开检修桩；断腿后仍有生机。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "08"
+      - generic: 紧急抢救
+      - generic: 飞至正对面的南极，避开检修桩；断腿后仍有生机。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "09 高重力起降 表面重力 46：起飞更沉，下降更快，提前持续制动。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "09"
+      - generic: 高重力起降
+      - generic: 表面重力 46：起飞更沉，下降更快，提前持续制动。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "10 静态小行星穿越 固定岩群挡住低空捷径：先升高，从岩群外侧绕行。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "10"
+      - generic: 静态小行星穿越
+      - generic: 固定岩群挡住低空捷径：先升高，从岩群外侧绕行。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "11 动态小行星避障 往返岩体按固定周期扫过低空通道：观察方向，绕外侧或等待空隙。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "11"
+      - generic: 动态小行星避障
+      - generic: 往返岩体按固定周期扫过低空通道：观察方向，绕外侧或等待空隙。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "12 双星引力与障碍组合 跨越双星引力区，在转移途中避开固定岩体，绕至伴星东南侧。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "12"
+      - generic: 双星引力与障碍组合
+      - generic: 跨越双星引力区，在转移途中避开固定岩体，绕至伴星东南侧。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "13 低燃料精准着陆 只有 32 单位燃料：利用低重力滑行，减少悬停，准确落在窄台。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "13"
+      - generic: 低燃料精准着陆
+      - generic: 只有 32 单位燃料：利用低重力滑行，减少悬停，准确落在窄台。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "14 复杂环境综合挑战 稀薄大气、高引力与两类岩体叠加：低空阻力明显，高空更适合转移。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "14"
+      - generic: 复杂环境综合挑战
+      - generic: 稀薄大气、高引力与两类岩体叠加：低空阻力明显，高空更适合转移。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "15 逆向绕行 向左起航，绕过逆向岩脊；在巡游岩体外侧提前制动，落向左下窄台。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "15"
+      - generic: 逆向绕行
+      - generic: 向左起航，绕过逆向岩脊；在巡游岩体外侧提前制动，落向左下窄台。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "16 交错巡游 两组岩体交错巡游：逐段观察通行时机，也可从完整运动范围外侧绕行。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "16"
+      - generic: 交错巡游
+      - generic: 两组岩体交错巡游：逐段观察通行时机，也可从完整运动范围外侧绕行。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "17 双星回望 从低重力伴星返航，进入主星更强的引力区，在迎面平台前减速。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "17"
+      - generic: 双星回望
+      - generic: 从低重力伴星返航，进入主星更强的引力区，在迎面平台前减速。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "18 大气边界 在大气外转移，再进入阻力层；空气会减速，也会改变下降节奏。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "18"
+      - generic: 大气边界
+      - generic: 在大气外转移，再进入阻力层；空气会减速，也会改变下降节奏。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "19 余量着陆 低重力、有限燃料与侧面窄台：少悬停，把最后一段修正留给着陆。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "19"
+      - generic: 余量着陆
+      - generic: 低重力、有限燃料与侧面窄台：少悬停，把最后一段修正留给着陆。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "20 进阶终航 绕过巡游岩群，进入大气层，在南侧窄台完成综合着陆。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "20"
+      - generic: 进阶终航
+      - generic: 绕过巡游岩群，进入大气层，在南侧窄台完成综合着陆。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "21 外环切入 先绕到岩体外侧，再沿两块岩体之间的横向通道进入东侧平台。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "21"
+      - generic: 外环切入
+      - generic: 先绕到岩体外侧，再沿两块岩体之间的横向通道进入东侧平台。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "22 巡游后进场 绕开外侧巡游岩的完整运动范围，再沿中央通道进入东侧平台。 完成上一关后解锁 独立 ☆☆☆ · 救援 ☆☆☆ 锁定" [disabled]:
+      - generic: "22"
+      - generic: 巡游后进场
+      - generic: 绕开外侧巡游岩的完整运动范围，再沿中央通道进入东侧平台。
+      - emphasis: 完成上一关后解锁
+      - generic: 独立 ☆☆☆ · 救援 ☆☆☆
+      - generic: 锁定
+    - button "试玩记录 · 查看与导出"
+    - button "返回主菜单"
+  - generic: 稳定停泊 · 等待点火
+  - generic: ◈ 0
+- generic: FLIGHT MANUAL / 01
+- heading "朝向决定推力。 惯性决定航向。" [level=3]:
+  - text: 朝向决定推力。
+  - text: 惯性决定航向。
+- paragraph: W 按住点火，松开滑行
+- paragraph: AD 调整机头朝向
+- paragraph: P 暂停 R 重新出发
+- text: 琥珀色箭线表示惯性方向。
+- text: 靠近平台时，先减速，再回正。

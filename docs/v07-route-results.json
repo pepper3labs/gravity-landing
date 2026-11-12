@@ -1,0 +1,686 @@
+{
+  "routeRevision": 2,
+  "method": "120 Hz fixed step, input only; no teleport, no damage overrides, no rescue",
+  "results": [
+    {
+      "levelId": "training-launch",
+      "state": "won",
+      "time": 51.91666666666436,
+      "fuel": 63.206541329176666,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 6231,
+      "initialFuel": 110,
+      "fuelPercent": 57.5,
+      "score": {
+        "stars": 3,
+        "score": 3935,
+        "time": 51.91666666666436,
+        "fuel": 63.206541329176666,
+        "fuelRatio": 0.5746049211743334,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.5496881581794493,
+        "touchdownAngle": 0.0004993351710143035
+      }
+    },
+    {
+      "levelId": "training-brake",
+      "state": "won",
+      "time": 56.30833333333078,
+      "fuel": 69.77654876750005,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 6758,
+      "initialFuel": 120,
+      "fuelPercent": 58.1,
+      "score": {
+        "stars": 3,
+        "score": 3934,
+        "time": 56.30833333333078,
+        "fuel": 69.77654876750005,
+        "fuelRatio": 0.581471239729167,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.451235888353916,
+        "touchdownAngle": 0.0005073573498779461
+      }
+    },
+    {
+      "levelId": "first-landing",
+      "state": "won",
+      "time": 110.64166666670079,
+      "fuel": 82.40620867170989,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 13278,
+      "initialFuel": 170,
+      "fuelPercent": 48.5,
+      "score": {
+        "stars": 3,
+        "score": 3832,
+        "time": 110.64166666670079,
+        "fuel": 82.40620867170989,
+        "fuelRatio": 0.48474240395123463,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.29188771656935486,
+        "touchdownAngle": 0.00010348531564963181
+      }
+    },
+    {
+      "levelId": "inertia",
+      "state": "won",
+      "time": 115.11666666670435,
+      "fuel": 97.41240695899134,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 13815,
+      "initialFuel": 190,
+      "fuelPercent": 51.3,
+      "score": {
+        "stars": 3,
+        "score": 3841,
+        "time": 115.11666666670435,
+        "fuel": 97.41240695899134,
+        "fuelRatio": 0.5126968787315334,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.43618743067596166,
+        "touchdownAngle": 0.0001000605229553031
+      }
+    },
+    {
+      "levelId": "low-gravity",
+      "state": "won",
+      "time": 135.39166666670786,
+      "fuel": 64.8038089985299,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 16249,
+      "initialFuel": 95,
+      "fuelPercent": 68.2,
+      "score": {
+        "stars": 3,
+        "score": 3906,
+        "time": 135.39166666670786,
+        "fuel": 64.8038089985299,
+        "fuelRatio": 0.6821453578792621,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.19320135485809323,
+        "touchdownAngle": 0.0005235236826452993
+      }
+    },
+    {
+      "levelId": "binary-crossing",
+      "state": "won",
+      "time": 179.00833333333486,
+      "fuel": 101.80566970740476,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 21482,
+      "initialFuel": 170,
+      "fuelPercent": 59.9,
+      "score": {
+        "stars": 3,
+        "score": 3820,
+        "time": 179.00833333333486,
+        "fuel": 101.80566970740476,
+        "fuelRatio": 0.5988568806317927,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.46857267413837117,
+        "touchdownAngle": 0.15782779648808987
+      }
+    },
+    {
+      "levelId": "precision",
+      "state": "won",
+      "time": 136.7916666667066,
+      "fuel": 66.1844352803559,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 16416,
+      "initialFuel": 175,
+      "fuelPercent": 37.8,
+      "score": {
+        "stars": 3,
+        "score": 3752,
+        "time": 136.7916666667066,
+        "fuel": 66.1844352803559,
+        "fuelRatio": 0.3781967730306051,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.3823480234558759,
+        "touchdownAngle": 0.00009987650062881494
+      }
+    },
+    {
+      "levelId": "emergency",
+      "state": "won",
+      "time": 138.88333333337135,
+      "fuel": 84.11385251441565,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 16667,
+      "initialFuel": 195,
+      "fuelPercent": 43.1,
+      "score": {
+        "stars": 3,
+        "score": 3777,
+        "time": 138.88333333337135,
+        "fuel": 84.11385251441565,
+        "fuelRatio": 0.4313530898175162,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.3919559876137641,
+        "touchdownAngle": 0.00010049042874760161
+      }
+    },
+    {
+      "levelId": "heavy-world",
+      "state": "won",
+      "time": 111.73333333336832,
+      "fuel": 80.9299356598929,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 13409,
+      "initialFuel": 190,
+      "fuelPercent": 42.6,
+      "score": {
+        "stars": 3,
+        "score": 3801,
+        "time": 111.73333333336832,
+        "fuel": 80.9299356598929,
+        "fuelRatio": 0.42594702978891,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.40309557457038475,
+        "touchdownAngle": 0.00008208226438655153
+      }
+    },
+    {
+      "levelId": "static-field",
+      "state": "won",
+      "time": 111.4166666667014,
+      "fuel": 69.01028685351521,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 13371,
+      "initialFuel": 115,
+      "fuelPercent": 60,
+      "score": {
+        "stars": 3,
+        "score": 3889,
+        "time": 111.4166666667014,
+        "fuel": 69.01028685351521,
+        "fuelRatio": 0.6000894509001323,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.4766983403266453,
+        "touchdownAngle": 0.0002805800134224601
+      }
+    },
+    {
+      "levelId": "moving-gate",
+      "state": "won",
+      "time": 120.20833333337507,
+      "fuel": 71.19140730887591,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 14426,
+      "initialFuel": 105,
+      "fuelPercent": 67.8,
+      "score": {
+        "stars": 3,
+        "score": 3919,
+        "time": 120.20833333337507,
+        "fuel": 71.19140730887591,
+        "fuelRatio": 0.6780134029416753,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.5217979198197387,
+        "touchdownAngle": 0.0004714368156635284
+      }
+    },
+    {
+      "levelId": "binary-debris",
+      "state": "won",
+      "time": 179.00833333333486,
+      "fuel": 101.80566970740476,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 21482,
+      "initialFuel": 170,
+      "fuelPercent": 59.9,
+      "score": {
+        "stars": 3,
+        "score": 3820,
+        "time": 179.00833333333486,
+        "fuel": 101.80566970740476,
+        "fuelRatio": 0.5988568806317927,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.46857267413837117,
+        "touchdownAngle": 0.15782779648808987
+      }
+    },
+    {
+      "levelId": "fuel-budget",
+      "state": "won",
+      "time": 110.97500000003438,
+      "fuel": 6.220763035664779,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 13319,
+      "initialFuel": 32,
+      "fuelPercent": 19.4,
+      "score": {
+        "stars": 3,
+        "score": 3686,
+        "time": 110.97500000003438,
+        "fuel": 6.220763035664779,
+        "fuelRatio": 0.19439884486452436,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.11498373765390607,
+        "touchdownAngle": 0.0009826418379674793
+      }
+    },
+    {
+      "levelId": "environment-finale",
+      "state": "won",
+      "time": 122.70833333337706,
+      "fuel": 109.42793323123243,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 14726,
+      "initialFuel": 190,
+      "fuelPercent": 57.6,
+      "score": {
+        "stars": 3,
+        "score": 3865,
+        "time": 122.70833333337706,
+        "fuel": 109.42793323123243,
+        "fuelRatio": 0.575936490690697,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.37449098066302255,
+        "touchdownAngle": 0.00003603832627230297
+      }
+    },
+    {
+      "levelId": "reverse-arc",
+      "state": "won",
+      "time": 120.4666666667086,
+      "fuel": 82.7375279683086,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 14457,
+      "initialFuel": 120,
+      "fuelPercent": 68.9,
+      "score": {
+        "stars": 3,
+        "score": 3924,
+        "time": 120.4666666667086,
+        "fuel": 82.7375279683086,
+        "fuelRatio": 0.689479399735905,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.5808640502076177,
+        "touchdownAngle": 0.0003357500652374501
+      }
+    },
+    {
+      "levelId": "crossing-patrol",
+      "state": "won",
+      "time": 123.81666666671127,
+      "fuel": 75.47430379397576,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 14859,
+      "initialFuel": 110,
+      "fuelPercent": 68.6,
+      "score": {
+        "stars": 3,
+        "score": 3919,
+        "time": 123.81666666671127,
+        "fuel": 75.47430379397576,
+        "fuelRatio": 0.6861300344906888,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.10019305199768375,
+        "touchdownAngle": 0.0004562998519535011
+      }
+    },
+    {
+      "levelId": "moon-return",
+      "state": "won",
+      "time": 119.74166666670803,
+      "fuel": 74.86623070376781,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 14370,
+      "initialFuel": 145,
+      "fuelPercent": 51.6,
+      "score": {
+        "stars": 3,
+        "score": 3838,
+        "time": 119.74166666670803,
+        "fuel": 74.86623070376781,
+        "fuelRatio": 0.516318832439778,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.5929606895922627,
+        "touchdownAngle": 0.006835220222340955
+      }
+    },
+    {
+      "levelId": "atmosphere-edge",
+      "state": "won",
+      "time": 127.35000000004742,
+      "fuel": 60.433755269749035,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 15283,
+      "initialFuel": 125,
+      "fuelPercent": 48.3,
+      "score": {
+        "stars": 3,
+        "score": 3814,
+        "time": 127.35000000004742,
+        "fuel": 60.433755269749035,
+        "fuelRatio": 0.4834700421579923,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.4724963571029279,
+        "touchdownAngle": 0.00003775979399689433
+      }
+    },
+    {
+      "levelId": "reserve-landing",
+      "state": "won",
+      "time": 111.07500000003446,
+      "fuel": 14.220763035665014,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 13331,
+      "initialFuel": 40,
+      "fuelPercent": 35.6,
+      "score": {
+        "stars": 3,
+        "score": 3767,
+        "time": 111.07500000003446,
+        "fuel": 14.220763035665014,
+        "fuelRatio": 0.35551907589162535,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.11498373764326945,
+        "touchdownAngle": 0.0009826418379670352
+      }
+    },
+    {
+      "levelId": "advanced-finale",
+      "state": "won",
+      "time": 151.40000000002664,
+      "fuel": 87.31572553629566,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 18169,
+      "initialFuel": 150,
+      "fuelPercent": 58.2,
+      "score": {
+        "stars": 3,
+        "score": 3840,
+        "time": 151.40000000002664,
+        "fuel": 87.31572553629566,
+        "fuelRatio": 0.5821048369086377,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.5465871869236738,
+        "touchdownAngle": 0.00010430275268924484
+      }
+    }
+  ]
+}

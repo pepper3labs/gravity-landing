@@ -1,0 +1,11 @@
+D:\Workspace\AI\Vibe\gravity landing\scripts\audit-build.ts:11
+if(!index.includes(pkg.version))throw new Error('构建版本与package不一致，请重新构建');
+                                      ^
+
+Error: 构建版本与package不一致，请重新构建
+    at <anonymous> (D:\Workspace\AI\Vibe\gravity landing\scripts\audit-build.ts:11:39)
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)
+    at async node:internal/modules/esm/loader:647:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5)
+
+Node.js v24.21.0

@@ -1,0 +1,176 @@
+{
+  "source": "automated-input-only",
+  "humanAcceptance": false,
+  "results": [
+    {
+      "levelId": "twin-atmosphere",
+      "state": "won",
+      "time": 187.80833333332686,
+      "fuel": 92.84536086354248,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 22538,
+      "title": "双星入层",
+      "initialFuel": 165,
+      "score": {
+        "stars": 3,
+        "score": 3794,
+        "time": 187.80833333332686,
+        "fuel": 92.84536086354248,
+        "fuelRatio": 0.5626991567487423,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.7467121747843654,
+        "touchdownAngle": 0.12105046850082513
+      }
+    },
+    {
+      "levelId": "silent-reserve",
+      "state": "won",
+      "time": 122.8000000000438,
+      "fuel": 24.402813761411835,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 14738,
+      "title": "静默余量",
+      "initialFuel": 55,
+      "score": {
+        "stars": 3,
+        "score": 3799,
+        "time": 122.8000000000438,
+        "fuel": 24.402813761411835,
+        "fuelRatio": 0.44368752293476066,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.4445037064006568,
+        "touchdownAngle": 0.0008915173088845929
+      }
+    },
+    {
+      "levelId": "polar-storm",
+      "state": "won",
+      "time": 162.4500000000166,
+      "fuel": 72.96737811245202,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 19495,
+      "title": "极地制动",
+      "initialFuel": 160,
+      "score": {
+        "stars": 3,
+        "score": 3766,
+        "time": 162.4500000000166,
+        "fuel": 72.96737811245202,
+        "fuelRatio": 0.4560461132028252,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.4013428796215729,
+        "touchdownAngle": 0.0000016186588167599325
+      }
+    },
+    {
+      "levelId": "homeward-needle",
+      "state": "won",
+      "time": 120.04166666670827,
+      "fuel": 54.86623070377504,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 14406,
+      "title": "返航针尖",
+      "initialFuel": 125,
+      "score": {
+        "stars": 3,
+        "score": 3799,
+        "time": 120.04166666670827,
+        "fuel": 54.86623070377504,
+        "fuelRatio": 0.4389298456302003,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 0.5929606895922627,
+        "touchdownAngle": 0.006835220222340955
+      }
+    },
+    {
+      "levelId": "last-horizon",
+      "state": "won",
+      "time": 214.16666666663622,
+      "fuel": 106.65721547140312,
+      "damage": [
+        0,
+        0
+      ],
+      "bodyImpact": 0,
+      "reason": "",
+      "steps": 25701,
+      "title": "最后的地平线",
+      "initialFuel": 180,
+      "score": {
+        "stars": 3,
+        "score": 3782,
+        "time": 214.16666666663622,
+        "fuel": 106.65721547140312,
+        "fuelRatio": 0.5925400859522395,
+        "assisted": false,
+        "practice": false,
+        "rescues": 0,
+        "coins": 150,
+        "result": "perfect",
+        "legHealth": [
+          100,
+          100
+        ],
+        "bodyIntegrity": 100,
+        "touchdownSpeed": 2.4806878052489454,
+        "touchdownAngle": 0.0017899129223482254
+      }
+    }
+  ]
+}

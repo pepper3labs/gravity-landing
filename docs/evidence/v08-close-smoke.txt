@@ -1,0 +1,24 @@
+{
+  "source": "automated fixture, not human",
+  "roundTrip": "save/reload/export/replay/submit",
+  "rows": [
+    {
+      "pilot": "automated-fixture",
+      "best": {
+        "id": "daily-v1:2026-10-15",
+        "day": "2026-10-15",
+        "levelId": "training-brake",
+        "score": 3934,
+        "stars": 3,
+        "time": 56.30833333333078,
+        "fuelRatio": 0.581471239729167
+      },
+      "rank": 1
+    }
+  ]
+}
+
+> gravity-landing@0.8.0-dev.1 verify:daily
+> tsx scripts/verify-daily.ts docs/evidence/daily-automated-fixture.json
+
+daily-v1:2026-10-15 training-brake 3934分 56.31s 完整输入独立重放通过（不证明真人或在线榜可信）

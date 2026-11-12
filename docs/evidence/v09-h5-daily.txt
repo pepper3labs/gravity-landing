@@ -1,0 +1,30 @@
+- main:
+  - link "引力盲航":
+    - /url: "#"
+    - text: 引力盲航
+    - generic: GRAVITY LANDING
+  - button "设置": ⚙
+  - button "关闭声音":
+  - button "全屏":
+  - region "引力盲航游戏区域":
+    - status
+    - generic: DAILY FLIGHT · 2026-10-15 UTC
+    - heading "每日挑战 · 减速训练" [level=2]
+    - paragraph: 每天北京时间 08:00 更新。同一天、同一规则版本的航线与障碍时序一致。
+    - paragraph: 免费重试，不提供救援或补给；不改变战役解锁、星数或金币。单次计分航行上限八分钟，暂停不计入。
+    - paragraph: 稍远一点的宽平台，练习提前制动与对准。
+    - paragraph: 目标仍在同一侧，距离比上一关稍长。不要一直按住推进。
+    - paragraph: 观察琥珀色惯性线；接近目标前，机头向速度反方向短喷制动。
+    - paragraph: 下降、横移与姿态都进入绿色窗口，再松开按键让支架稳定。
+    - heading "本机今日最佳" [level=3]
+    - paragraph: 尚无纪录，完成一次独立航行吧。
+    - paragraph: 按分数优先，同分比较用时，再比较余油。仅保存本机最近30个挑战日的最佳成绩；这不是在线排行榜。
+    - status: TapTap 在线榜尚未接通，当前仅保留本机纪录。
+    - paragraph: 完整回放保留最近三个挑战日，可导出留存。
+    - button "导出今日完整回放" [disabled]
+    - button "复核并查看本机模拟榜" [disabled]
+    - status: 完成今日独立挑战后，可导出回放并查看本机模拟榜。
+    - button "挑战今日航线"
+    - button "返回战役航线"
+  - generic: 稳定停泊 · 等待点火
+  - generic: ◈ 0

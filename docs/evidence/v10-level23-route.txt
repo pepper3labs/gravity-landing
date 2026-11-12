@@ -1,0 +1,38 @@
+- text: ORBITAL FLIGHT LAB
+- heading "飞向未知。 平稳归航。" [level=2]:
+  - text: 飞向未知。
+  - text: 平稳归航。
+- paragraph:
+  - text: 每一次短喷射，
+  - text: 都在改写你的航线。
+- generic: 引力盲航 / v0.9.0-dev.4
+- main:
+  - link "引力盲航":
+    - /url: "#"
+    - text: 引力盲航
+    - generic: GRAVITY LANDING
+  - button "设置": ⚙
+  - button "关闭声音":
+  - button "全屏":
+  - button "暂停":
+  - region "引力盲航游戏区域":
+    - generic: FLIGHT PATH / 全程航迹
+    - heading "精准、平稳，双支架完整。" [level=3]
+    - paragraph: 164.6s · 66% 余油 · ★★★
+    - button "立即重试"
+    - button "查看结算 / 继续"
+    - generic: 实心点：起点 空心圈：终点 折线：完整飞行轨迹
+  - generic: 练习 / 验证 · 不保存成绩
+  - button "重试 R":
+    - text: 重试
+    - generic: R
+  - generic: ◈ 0
+- generic: FLIGHT MANUAL / 01
+- heading "朝向决定推力。 惯性决定航向。" [level=3]:
+  - text: 朝向决定推力。
+  - text: 惯性决定航向。
+- paragraph: W 按住点火，松开滑行
+- paragraph: AD 调整机头朝向
+- paragraph: P 暂停 R 重新出发
+- text: 琥珀色箭线表示惯性方向。
+- text: 靠近平台时，先减速，再回正。

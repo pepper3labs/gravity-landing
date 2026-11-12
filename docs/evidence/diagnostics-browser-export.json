@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "gameVersion": "0.6.0",
+  "exportedAt": "2026-10-14T11:58:56.036Z",
+  "source": "local-manual-play",
+  "scope": "Most recent 200 attempts only; excludes practice and QA. Not proof of human or device acceptance.",
+  "levels": [
+    {
+      "levelId": "training-launch",
+      "attempts": 2,
+      "unassistedWins": 0,
+      "assistedWins": 0,
+      "failures": 0,
+      "abandoned": 2,
+      "interrupted": 0,
+      "retries": 1,
+      "attemptsToFirstUnassistedWin": null,
+      "activeSecondsToFirstUnassistedWin": null
+    }
+  ],
+  "attempts": [
+    {
+      "id": 1,
+      "levelId": "training-launch",
+      "startedAt": "2026-10-14T11:57:12.147Z",
+      "outcome": "abandoned",
+      "seconds": 0,
+      "fuel": 110,
+      "assisted": false,
+      "rescues": 0,
+      "reason": "",
+      "failures": [],
+      "endedAt": "2026-10-14T11:57:20.574Z",
+      "departure": "retry"
+    },
+    {
+      "id": 2,
+      "levelId": "training-launch",
+      "startedAt": "2026-10-14T11:57:20.575Z",
+      "outcome": "abandoned",
+      "seconds": 0,
+      "fuel": 110,
+      "assisted": false,
+      "rescues": 0,
+      "reason": "",
+      "failures": [],
+      "endedAt": "2026-10-14T11:57:29.442Z",
+      "departure": "menu"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "archive": {
+    "levelId": "binary-reef",
+    "state": "won",
+    "steps": 19754,
+    "time": 164.60833333334796,
+    "fuel": 112.49653665133839,
+    "trajectoryPoints": 1574
+  },
+  "currentPilotScore": {
+    "stars": 3,
+    "score": 3866,
+    "time": 164.60833333334796,
+    "fuel": 112.49653665133839,
+    "fuelRatio": 0.661744333243167,
+    "assisted": false,
+    "practice": false,
+    "rescues": 0,
+    "coins": 150,
+    "result": "perfect",
+    "legHealth": [
+      100,
+      100
+    ],
+    "bodyIntegrity": 100,
+    "touchdownSpeed": 1.9345402050064846,
+    "touchdownAngle": 0.0039627774496850945
+  },
+  "note": "自动输入验证，不代表真人验收；原通关档案未替换"
+}

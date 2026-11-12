@@ -1,0 +1,76 @@
+
+> gravity-landing@0.9.0-dev.8 build:candidate
+> tsc --noEmit && vite build --mode taptap-h5 --base ./ --outDir dist-candidate && tsx scripts/audit-build.ts dist-candidate
+
+vite v7.3.7 building client environment for taptap-h5...
+transforming...
+✓ 36 modules transformed.
+rendering chunks...
+computing gzip size...
+dist-candidate/index.html                     0.73 kB │ gzip:   0.50 kB
+dist-candidate/assets/index-C4UI1Dbn.css     20.91 kB │ gzip:   5.69 kB
+dist-candidate/assets/index-C5kODZYf.js     126.52 kB │ gzip:  47.81 kB
+dist-candidate/assets/phaser-DFK5Ua9d.js  1,208.06 kB │ gzip: 332.17 kB
+✓ built in 3.46s
+{
+  "format": "gravity-local-build",
+  "version": 1,
+  "gameVersion": "0.9.0-dev.8",
+  "createdAt": "2026-10-16T06:31:02.698Z",
+  "commit": "9cb1c7525d04ca78a9023654376a4fe87630820f",
+  "workingTreeDirty": true,
+  "sourceFingerprint": "91851924bfb76da3a55d49d165aa1ba872d1f1fb424d439b153adbe0ece837b5",
+  "lockfileSha256": "306d96b7c7096fcfd1baa9be714fbb07c967555f1ce3abdb3ba7148c8046c739",
+  "node": "v24.21.0",
+  "scope": "Local playtest only; no human/device/platform acceptance implied",
+  "buildDirectory": "dist-candidate",
+  "artifacts": [
+    {
+      "path": "about-data.html",
+      "bytes": 2115,
+      "gzipBytes": 1423,
+      "sha256": "da62b25690b77311d6dbb0b2f36f6e6164541edb4edb7509ebc7b17edeab4335"
+    },
+    {
+      "path": "assets/index-C4UI1Dbn.css",
+      "bytes": 20910,
+      "gzipBytes": 5691,
+      "sha256": "3d0840f0a972da32aa5d7a595d478927efd58828d16ab911cdb2ff70438cbac4"
+    },
+    {
+      "path": "assets/index-C5kODZYf.js",
+      "bytes": 126519,
+      "gzipBytes": 47812,
+      "sha256": "570943cddd26b47b79c6c979f7da03d9cdc9fcc7953b4ddc89570616037be368"
+    },
+    {
+      "path": "assets/phaser-DFK5Ua9d.js",
+      "bytes": 1208056,
+      "gzipBytes": 332169,
+      "sha256": "f9025c1a29bc3ae097dd886ce07717b297466da1ce8f032c8294252ce6cf5cdb"
+    },
+    {
+      "path": "icon.svg",
+      "bytes": 486,
+      "gzipBytes": 302,
+      "sha256": "22b9b179f9793133c47d74e90496c7fe95ee1f20ace8f8a2474626a945816d65"
+    },
+    {
+      "path": "index.html",
+      "bytes": 728,
+      "gzipBytes": 497,
+      "sha256": "58158776ea6c61d1828d63440196fe8df26bb2fa1b3859ad8596274751afca36"
+    },
+    {
+      "path": "third-party-notices.txt",
+      "bytes": 3519,
+      "gzipBytes": 982,
+      "sha256": "a4b509f755dfac25e7836d0debe2ff0167a11c09a7752b43eb312852d43f2e82"
+    }
+  ],
+  "totalBytes": 1362333,
+  "totalGzipBytes": 388876,
+  "largeChunks": [
+    "assets/phaser-DFK5Ua9d.js"
+  ]
+}

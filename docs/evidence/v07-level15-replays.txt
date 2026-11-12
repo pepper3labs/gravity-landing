@@ -1,0 +1,16 @@
+training-launch won 6231 steps 51.92s 58495 bytes
+training-brake won 6758 steps 56.31s 63415 bytes
+first-landing won 13278 steps 110.64s 123107 bytes
+inertia won 13815 steps 115.12s 127892 bytes
+low-gravity won 16249 steps 135.39s 142095 bytes
+binary-crossing won 21482 steps 179.01s 193491 bytes
+precision won 16416 steps 136.79s 151306 bytes
+emergency won 16667 steps 138.88s 153552 bytes
+heavy-world won 13409 steps 111.73s 124262 bytes
+static-field won 13371 steps 111.42s 121281 bytes
+moving-gate won 14426 steps 120.21s 127574 bytes
+binary-debris won 21482 steps 179.01s 193483 bytes
+fuel-budget won 13319 steps 110.98s 116786 bytes
+environment-finale won 14726 steps 122.71s 134122 bytes
+reverse-arc won 14457 steps 120.47s 129397 bytes
+15/15 档案从磁盘读取并重放通过（自动验证，不是真人验收）

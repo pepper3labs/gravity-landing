@@ -1,0 +1,33 @@
+{
+  "name": "gravity-landing",
+  "version": "1.0.0-rc.3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify:v09": "tsx scripts/verify-v09.ts",
+    "dev": "vite --host 0.0.0.0",
+    "preview:local": "vite --host 127.0.0.1 --port 10453 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "verify:levels": "tsx scripts/verify-levels.ts",
+    "record:replays": "tsx scripts/replays.ts record",
+    "append:replays": "tsx scripts/replays.ts append",
+    "verify:replays": "tsx scripts/replays.ts verify",
+    "fingerprints": "tsx scripts/daily-fingerprints.ts",
+    "verify:daily": "tsx scripts/verify-daily.ts",
+    "audit:build": "tsx scripts/audit-build.ts",
+    "package:local": "npm run build && npm run audit:build",
+    "build:candidate": "tsc --noEmit && vite build --base ./ --outDir dist-candidate && tsx scripts/audit-build.ts dist-candidate",
+    "check:release": "tsx scripts/check-release.ts"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vite": "^7.1.0",
+    "tsx": "^4.20.0",
+    "@types/node": "^24.0.0"
+  }
+}

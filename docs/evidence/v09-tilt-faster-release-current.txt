@@ -1,0 +1,18 @@
+
+> gravity-landing@0.9.0-dev.8 check:release
+> tsx scripts/check-release.ts
+
+{
+  "target": "TapTap H5 minigame",
+  "ready": false,
+  "blocked": [
+    "device-playtest: Android/iOS触控、后台、音频、性能与关键关卡真人通关",
+    "content-scope: v1.0约30关/5主题目标尚未达到；当前23关，缩减上线范围需用户决策",
+    "platform-project: 游戏项目和H5自测包已就绪；主体状态、H5 SDK接入资料及完整容器验收待确认",
+    "rewarded-ad: H5正式SDK、广告开通/测试位、完成回调及首启展示策略确认",
+    "online-leaderboard: 榜单ID、H5身份与接口、服务端复核、时区日切与同分规则验证",
+    "release-materials: 运营主体/联系信息、适用平台资料、正式政策、素材许可及商店截图确认",
+    "publish-approval: 用户对具体包、环境与发布动作的明确批准"
+  ],
+  "note": "只读检查，不部署、不修改验收结论；人工证据仍需审阅"
+}
