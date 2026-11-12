@@ -9,7 +9,7 @@
 - Windows / macOS / Linux 均可；Windows 建议用 Git Bash 或 PowerShell
 
 ```sh
-git clone git@github.com:pepper3labs/gravity-landing.git
+git clone https://github.com/pepper3labs/gravity-landing.git
 cd gravity-landing
 npm install
 ```
