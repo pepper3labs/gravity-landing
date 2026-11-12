@@ -1,149 +1,81 @@
-# 引力盲航 / Gravity Landing 0.9.0-dev.23
+# 引力盲航 / Gravity Landing 1.0.0-rc.3
 
-当前为「1.0 前功能扩展：金币经济与连续远征」。30关主线金币解锁、累计星级差额奖励、30关资源继承远征、纯净/综合远征榜客户端已实现。真实新榜回执、手机UI与普通玩家完整远征仍待自测验收，不代表已可公开上线。
+TypeScript + Phaser 3 的物理飞行解谜游戏：120 Hz 固定时间步、双起落架损伤模型、30 关五章战役、金币经济、每日挑战与连续远征。程序化美术与合成音效，无外部素材链接；无后端，全部存档保存在浏览器本地。
 
-- [最终计划](docs/expedition/PLAN.md)
-- [30关经济与资源参数](docs/expedition/BALANCE.md)
-- [平台能力与手机验收](docs/expedition/PLATFORM.md)
-- 完整验证：`npm run verify:v09`（含真实资源继承的远征模型）。
+**当前为 1.0 候选版（rc.3）**：30 关 / 90 星、244 项测试、30 关永久回放全部重放通过、两套构建审计通过。真人手机验收仍以 [发布候选检查清单](docs/RELEASE_CHECKLIST.md) 为边界，不代表已公开发行。
 
 ## 在线服务状态
 
-本仓库为平台无关版本：激励广告为本地模拟，在线排行榜默认关闭（no-op 适配器），所有成绩仅保存在本机。接入平台时，需实现 `src/platform-services.ts` 的 `RewardedPort` 与 `src/online-provider.ts` 的 `OnlineLeaderboardHost`，并在 `ONLINE_BOARDS` 中配置榜单编号；未配置前界面按「仅本机成绩」降级，不会上传任何数据。
+本仓库为平台无关版本：激励广告为本地模拟，在线排行榜默认关闭（no-op 适配器），所有成绩仅保存在本机。接入平台时，需实现 `src/platform-services.ts` 的 `RewardedPort` 与 `src/online-provider.ts` 的 `OnlineLeaderboardHost`，并在 `ONLINE_BOARDS` 中配置榜单编号；未配置前界面按「仅本机成绩」降级，不会上传任何数据。具体接法见 [从零搭建自己的版本](docs/BUILD-YOUR-OWN.md) 第 7、8 节。
 
 ## 文档导航
 
 - [开发日志](docs/DEVLOG.md)：从 v0.4 原型到 1.0 候选的完整开发轨迹、每阶段验收证据与工程方法
 - [从零搭建自己的版本](docs/BUILD-YOUR-OWN.md)：环境准备、命令表、加关、调手感、接回广告与排行榜、部署与已知坑
-- [远征计划](docs/expedition/PLAN.md) / [资源参数](docs/expedition/BALANCE.md)
-- [决策记录](docs/DECISIONS.md) / [测试矩阵](docs/TEST_MATRIX.md) / [逐次进度](docs/PROGRESS.md)
+- [远征计划](docs/expedition/PLAN.md) / [资源参数](docs/expedition/BALANCE.md) / [平台能力与手机验收](docs/expedition/PLATFORM.md)
+- [决策记录](docs/DECISIONS.md) / [测试矩阵](docs/TEST_MATRIX.md) / [逐次进度](docs/PROGRESS.md) / [证据目录](docs/evidence/)
 
-以下为历史版本记录。
+## 快速开始
 
-# 引力盲航 / Gravity Landing v0.7.0-dev.1
-
-TypeScript + Phaser 3，120 Hz 固定时间步物理。保留 v0.4 操控、程序化科幻美术与双起落架模型，现有十四关战役、环境差异、小行星避障、教学、三星评分和本地进度。
-
-## v0.7 开发中
-
-首批新增重玩目标筛选和推荐，区分独立/救援成绩。当前仍十四关、42 星；107 项测试与十四份历史回放通过。v0.6 工程基线为 `v0.6-engineering-baseline`（3c39c0c），新六关真人及手机实机验收仍待补。见 [v0.7 开发记录](docs/V07-DEVELOPMENT.md) 与 [v0.6 收尾](docs/V06-CLOSEOUT.md)。
-
-## v0.6 星际环境（实现基线）
-
-保留原八关，新增高重力起降、静态小行星穿越、动态小行星避障、双星障碍、低燃料精准着陆与综合挑战，共十四关、42 星。全部十四关成功或失败后默认显示全程航迹，可查看详细结算或立即重试。
-
-静态和动态小行星都与主体真实碰撞；动态轨迹可见且确定，擦碰改变线速度和姿态，严重撞击会坠毁。岩质、冰面、火山外观由项目内程序生成。综合关在离地 170m 内启用随高度衰减的大气阻力。飞船推力、旋转和原八关物理参数不变。
-
-稳定版已保存为 Git 标签 `v0.5.2-stable`（`b9082a0`）。74 项测试通过；旧八关用时、燃料、损伤和评分逐项对齐基线；十四关均完成固定时间步输入驱动通关和确定性回放。旧八关存档不会重置，完成第八关自然解锁第九关。详见 [v0.6 交付记录](docs/V06-DELIVERY.md) 和 [十四关验证结果](docs/v06-route-results.json)。
-
-## v0.5.2 训练关（历史记录）
-
-现在共八关、24 星。前两关「起飞训练」「减速训练」的起终点直距约 190m / 315m，平台宽 140m / 128m，采用强化双支架与普通重力，练习点火、转向、制动和轻触着陆。原六条长航线顺延为第 3–8 关，配置与物理保持不变；原「首次着陆」改名为「远侧归航」。
-
-新玩家从第一关逐步解锁；已有六关存档保留原成绩、教学状态和已解锁任务，新训练关可重玩且不会自动算通关。新目录带有独立版本标记，重新加载后也保留迁移结果。
-
-48/48 测试通过，类型检查及生产构建通过。八条输入驱动航线全部通关；前两关自动驾驶验证用时 51.92s / 56.31s。详见 [八关验证结果](docs/v05-route-results.json)。
-
-## v0.5.1 航线调整
-
-单星球现在跨越 100°–180°（约四分之一至半周），紧急抢救目标位于南极。灰月重力为普通星球的五分之一；双星改为半径 600/240 的行星与伴星，表面间隙约 1,069m，目标在伴星东南侧。屏幕方向固定不旋转。
-
-旧解锁保留，短航线成绩单独归档；新航线教学、星级与纪录独立开始。详见 [调整与验证记录](docs/V051-FAR-SIDE.md)。该阶段的历史验证记录保留供对比。
-
-## 历史试玩地址（不保证当前可用）
-
-- 电脑：[本机试玩](http://localhost:10453/)
-- 同一 Wi-Fi 手机：[手机试玩](http://192.168.1.100:10453/)
-- 历史记录中的 WLAN IPv4 为 `192.168.1.100`，切换网络后以 `ipconfig` 的 WLAN 地址为准。不要使用 Meta 或 ZeroTier 虚拟网卡地址。
-- 历史服务监听 `0.0.0.0:10453`；本次未启动或确认该服务。手机无法连接时，确认处于同一网络、无客户端隔离，且 Windows 专用网络允许 Node 入站；本次没有更改防火墙。
-- 进度按浏览器和网址独立保存；电脑 localhost 与手机 IP 地址不会共享存档。
-
-## 开发命令
+需要 Node.js ≥ 20.19（Vite 7 要求）。
 
 ```sh
 npm install
-npm run dev
-npm run typecheck
-npm test
-npm run verify:levels
-npm run verify:replays
-npm run build
+npm run dev            # 开发服务器 0.0.0.0:5173
+npm run preview:local  # 固定 127.0.0.1:10453，适合手机同 Wi-Fi 调试
+npm run typecheck && npm test
+npm run verify:replays # 读取 docs/replays 逐帧复现 30 关终态
+npm run build          # 生产构建到 dist/
 ```
 
-`npm run verify:levels` 通过常规推进/转向输入飞完十四关，生成 `docs/v06-route-results.json`；不会改浏览器存档。测试中保留输入序列并重新回放，比较最终状态。
-
-十四关完整输入已永久保存为 `docs/replays/*.json.gz`。`npm run verify:replays` 直接读取已有档案复现终态、评分和航迹，不重新生成航线；`npm run record:replays` 用于有意更新档案。规则或配置不兼容、损坏输入及结果差异会使验证失败。详见 [永久回放档案说明](docs/REPLAY-ARCHIVES.md)。
+完整命令表、加关流程与平台接入示例见 [从零搭建自己的版本](docs/BUILD-YOUR-OWN.md)。手机同网访问 `http://<电脑 WLAN IP>:5173/`，进度按浏览器与网址隔离。
 
 ## 操作与循环
 
-1. 主菜单进入关卡选择，首关默认解锁。
+1. 主菜单进入关卡选择，首关默认解锁；后续关卡用金币购买，或在上一个关卡拿到两星免费解锁。
 2. 首次进入可阅读或跳过教学；重试不再弹出教学。
 3. **W / ↑ / 空格**：推进；**A D / ← →**：旋转；**P / Esc**：暂停；**R**：立即重试；**M**：静音。
-4. 手机左手旋转、右手推进，支持双指同时操作。切出窗口自动暂停。
+4. 手机左手旋转、右手推进，支持双指同时操作；可在设置中开启倾斜控制。切出窗口自动暂停。
 5. 停泊时不动、不耗油；主动点火起飞。琥珀色线表示惯性方向，推进方向由机头决定。
 6. 接近目标后看平台法向速度、切向速度、姿态与各自阈值；轻触后松开推进，等待稳定确认。
-7. 通关至少一星，可直接前往下一关，或重试挑战三星。解锁与各关最好成绩保存在当前浏览器。
-8. “先练着陆”从所选目标上空开始，不计金币、成绩或解锁。
+7. 通关至少一星；"先练着陆"从目标上空开始，不计金币、成绩或解锁。
+8. 每日挑战按北京时间 00:00 换航线；连续远征可跨 30 关继承燃料、支架与损伤。
 
 ## 损伤与奖励
 
-左右支架分别计算接触冲击，角速度参与接触点速度计算；支架断裂后删除其碰撞接触点。主体始终独立判定，以较低冲击阈值承受碰撞。断一条腿仍能通过推力和旋转抢救；单腿迫降必须有真实主体接触并达到更严格的速度/稳定时间要求。
+左右支架分别计算接触冲击，角速度参与接触点速度计算；支架断裂后删除其碰撞接触点。主体始终独立判定，以较低冲击阈值承受碰撞。断一条腿仍能通过推力和旋转抢救；单腿迫降必须有真实主体接触并达到更严格的速度/稳定时间要求。所有关卡在成功或失败后显示全程航迹。
 
-模拟广告仍为 1.8 秒：失败后回安全检查点，修复支架并减速；无检查点则回停泊发射台。救援不重置累计用时，成绩保存为辅助记录。通关可领取一次额外等额金币。没有真实广告 SDK、联网排行榜或后端。
+本仓库的激励广告为 1.8 秒本地模拟：失败后可回到安全检查点，修复支架并减速（无检查点则回发射台）；救援不重置累计用时，成绩保存为辅助记录。通关可领取一次额外等额金币。不包含真实广告 SDK、联网排行榜或后端。
 
-## 配置、代码和验证
+## 工程与验证
 
-- `src/levels.ts` / `src/level-types.ts`：十四关配置、目标、教学、评分、解锁关系、配置校验。
-- `src/physics.ts`：原有物理、按关卡加载参数、叠加引力、障碍物真实碰撞。
-- `src/scoring.ts` / `src/progress.ts`：三星计算，正常/救援成绩隔离，版本化本地存档。
-- `src/replay.ts` / `scripts/verify-levels.ts`：输入驱动的自动驾驶与确定性回放。
-- `src/main.ts` / `src/style.css`：主菜单、关卡选择、简报、HUD、暂停、结算。
-- `src/camera.ts` / `src/visuals.ts` / `src/feedback.ts`：多星球全景、障碍物画面、关卡阈值提示。
-- `src/services.ts`：模拟广告、金币、每日挑战及区分辅助状态的排行榜类型接口。
-- `docs/V04-BASELINE.md`：原始参数及稳定标签。
-- `docs/V05-DELIVERY.md`：设计、参数变化、真实测试数据、已知限制与后续建议。
+- **确定性物理**：`src/physics.ts` 120 Hz 固定步进；关卡只描述世界（`src/levels.ts` / `level-types.ts`），不写物理。
+- **永久回放档案**：`docs/replays/*.json.gz` 固化每关路线，`npm run verify:replays` 复现终态与评分；改规则必须显式重录（`record:replays` / `append:replays`）。
+- **基线冻结**：旧版本结果文件（`docs/v05/v06/v07-route-results.json`）保留为对照，测试断言旧成绩不变。
+- **证据留档**：测试与构建输出在 `docs/evidence/`，决策在 [DECISIONS](docs/DECISIONS.md)，覆盖矩阵在 [TEST_MATRIX](docs/TEST_MATRIX.md)。
+- **调试参数**（生产构建移除）：`?level=<关卡id>` 直接进关不存档；`qa=perfect/damaged/recovered/single-leg/crash` 设定初始场景；`?qa=ad&ad=failed|cancelled|completed` 复现广告异常；`?level=<id>&qa=route` 快速回放整条航迹。
 
-原有 18 项基础测试保持原样；既有战役测试 30 项；v0.6 新增 26 项，合计 74 项。
+完整的代码地图（32 个模块职责）见 [从零搭建自己的版本](docs/BUILD-YOUR-OWN.md#4-代码地图)。
 
-开发服务器支持 `?level=binary-crossing` 指定关卡验证；该模式不保存成绩、金币或解锁。也可组合 `?level=emergency&qa=single-leg` 检查局部迫降。
-`qa` 支持 `perfect`、`damaged`、`recovered`、`single-leg`、`crash`：只设初始场景，由真实求解器产生结果；不代表从起点飞完关卡。生产构建移除这些入口。
+## 版本记录
 
-程序化美术、内联 SVG 与合成音效均在项目内，无外部素材链接。未接入真实广告 SDK、在线排行榜和后端。
+| 版本 | 里程碑 | 详细记录 |
+|---|---|---|
+| v0.4 | 原型：6 关、双起落架、120 Hz 固定步进 | [V04-BASELINE](docs/V04-BASELINE.md) |
+| v0.5.1 – v0.5.2 | 训练关与航线重排，8 关 / 24 星，48 测试 | [训练关交付](docs/V052-TRAINING.md) |
+| v0.6 | 星际环境：14 关 / 42 星，小行星、双星、低燃料、综合挑战，74 测试 | [交付记录](docs/V06-DELIVERY.md) |
+| v0.7 | 重玩目标与成绩分离，扩至 20 关，107 → 111 测试 | [关卡扩充](docs/V07-EXPANSION.md) |
+| v0.8 | 本地每日挑战：UTC 日切、回放归档、离线校验 | [每日挑战](docs/V08-DAILY.md) |
+| v0.9 | 试玩诊断、性能摘要、设置、广告恢复保护，201 → 207 测试 | [试玩准备](docs/V09-PREPARATION.md) |
+| v0.10 | 21–25 关、观测台、最终章 | [最终章](docs/V10-FINAL-CHAPTER.md) |
+| v0.14 | 动态黑洞渲染管线（离屏 + 着色器） | [动态黑洞](docs/V14-DYNAMIC-BLACK-HOLE.md) |
+| v0.16 | 三星任务系统 | [星级任务](docs/V16-STAR-TASKS.md) |
+| v0.17 – v0.18 | 平台广告与在线榜联调（**本仓库已整体移除**，改为 no-op） | [平台自测](docs/V18-PLATFORM-SELFTEST.md) |
+| v0.26 – v0.28 | 金币经济、30 关资源继承远征、纯净/综合双榜客户端，255 测试 | [游戏内榜单](docs/V26-IN-GAME-RANKINGS.md) / [发布前修正](docs/V28-PRELAUNCH-FIXES.md) |
+| **v1.0.0-rc.1 – rc.3** | 一屏化、手机布局修正、发布候选复核；244 测试、30/30 回放、双构建审计 | [候选清单](docs/RELEASE_CHECKLIST.md) / [rc.1 就绪度](docs/V1-RC1-READINESS.md) |
 
-## 新环境开发验证
-
-关卡选择底部新增「试玩记录 · 查看与导出」。最近 200 次正常手动尝试仅保存在当前浏览器，包括开始、失败原因、飞行用时、重试、退出与救援；练习、指定关卡验证和 QA 不计入。可导出 JSON 查看逐关摘要、首次独立成功前的尝试数和累计飞行时间。数据不会上传，不包含账号或设备指纹；窗口内摘要不能当作全量留存率或真人实机验收证明。详见 [试玩诊断交付说明](docs/PLAYTEST-DIAGNOSTICS.md)。
-
-- `npm run verify:levels -- --stage-one`：单独验证第 9–11 关并保存阶段记录。
-- `src/environment.ts`：小行星解析轨迹/速度、连续碰撞检测、接近距离与大气阻力。
-- 开发模式 `?level=moving-gate`：新关预览，不保存成绩、不更改解锁。
-- 开发模式 `?level=moving-gate&qa=route`：点击开始后分批快速回放真实推进/旋转输入，观察整条航迹。生产构建不提供此功能。
-- 开发模式 `?level=static-field&qa=asteroid`：验证小行星撞击原因与失败航迹；不计成绩。
-- 岩体仅判定主体碰撞，不作为可停靠平台。轻擦损伤沿用主体最大冲击指标，不额外叠加新的扣血规则。
-
-模拟广告新增取消、失败返回结算与过期回调保护，免费重试始终可用。开发场景 `?qa=ad&ad=failed` 可复现异常（也支持 cancelled/completed），生产构建禁用。详见 [广告恢复验证](docs/REWARDED-AD-RECOVERY.md)。当前完整测试为 95 项，含诊断、回放归档和广告恢复新增测试。
-
-顶部「设置」支持保存声音、震动和低特效偏好，飞行中打开会暂停；系统减少动态效果优先。详见 [基础设置](docs/SETTINGS.md)。当前测试总数 99 项。
-
-## 验收入口
-
-- [发布候选检查清单](docs/RELEASE_CHECKLIST.md)：现有证据、未完成门槛及候选包复核步骤。
-- [真人试玩记录模板](docs/PLAYTEST-TEMPLATE.md)：设备、十四关、手机操作、性能对比及问题复测；尚未填写实际人测。
-
-v0.6 工程收尾增加会话内性能摘要，手动导出时附带最近 20 次正常航行的帧间隔分布；不上传，刷新清空。详见 [工程收尾及验收边界](docs/V06-CLOSEOUT.md)。
-
-## v0.7 内容批次：第15关
-
-新增第三章“逆向绕行”，当前十五关、45星。原十四关配置及永久回放不改，旧档完成第十四关后自然解锁新关。111项测试、15关输入验证与15份离线回放通过；真人难度待测。[第十五关交付与航迹](docs/V07-LEVEL15.md)。
-
-新增 `npm run append:replays` 仅追加新关并校验旧档；`verify:levels` 的当前结果保存在 `docs/v07-route-results.json`，旧v0.6结果保留为基线。
-
-当前内容已扩充至20关/60星（0.7.0-dev.2）；详见 docs/V07-EXPANSION.md。真人与手机验收仍待补。
-
-当前开发0.8.0-dev.1：20关/60星，新增本地每日挑战（选关页入口）。每日成绩与战役隔离，UTC午夜切换，无广告辅助，无在线排行榜。交付和验证边界见 docs/V08-DAILY.md。
-
-当前开发0.9.0-dev.1：v0.8本地每日回放与模拟榜工程完成，v0.9开始启动性能和试玩准备。使用npm run package:local构建并生成dist/build-manifest.json；该命令不会上传/部署。每日导出文件可用npm run verify:daily -- <文件路径>离线复核。见docs/V08-CLOSEOUT.md、docs/V09-PREPARATION.md。
+逐步的逐日进度见 [PROGRESS](docs/PROGRESS.md)；平台发布相关数字与账号标识在公开版本中已脱敏为 `<pkg-XX>` 等占位符。
 
 ## 许可证
 
-本项目采用 MIT 许可证发布，详见 [LICENSE](LICENSE)。Copyright (c) 2026 Pepper3Labs。
+本项目采用 MIT 许可证发布，详见 [LICENSE](LICENSE)。Copyright (c) 2026 Pepper3Labs。第三方依赖声明见 [third-party-notices.txt](public/third-party-notices.txt)。
